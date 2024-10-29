@@ -1,0 +1,34 @@
+{
+  "courses": [
+    {
+      "course": {
+        "name": "Readings in Philippine History",
+        "code": "GEC109",
+        "units": 3
+      },
+      "adviser": {
+        "name": {
+          "first_name": "Elmer",
+          "middle_name": "Lakandula",
+          "last_name": "Palahang"
+        }
+      },
+      "sectionCode": "Ff1"
+    },
+    {
+      "course": {
+        "name": "Computer Programming 1",
+        "code": "CCC101",
+        "units": 3
+      },
+      "adviser": {
+        "name": {
+          "first_name": "Johaira",
+          "middle_name": "Rasuman",
+          "last_name": "Isra"
+        }
+      },
+      "sectionCode": "CcUu"
+    }
+  ]
+}
