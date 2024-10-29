@@ -1,0 +1,19 @@
+{
+  "options": [
+    {
+      "name": "Courses",
+      "to": "/student/courses",
+      "icon": "sym_r_list_alt"
+    },
+    {
+      "name": "Advisers",
+      "to": "/student/advisers",
+      "icon": "sym_r_group"
+    },
+    {
+      "name": "History",
+      "to": "/student/history",
+      "icon": "sym_r_history"
+    }
+  ]
+}
