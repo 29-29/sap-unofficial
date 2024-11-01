@@ -18,7 +18,7 @@
 </script>
 
 <template>
-  <div class="q-pa-md">
+  <div class="q-py-sm">
     <q-btn-dropdown
       color="primary"
       unelevated
@@ -30,7 +30,7 @@
             v-if="currentSemLabel"
             rounded
             color="white"
-            class="text-primary"
+            text-color="primary"
           >{{ currentSem.year }}</q-badge>
           {{ currentSemLabel || 'Semester' }}
         </div>

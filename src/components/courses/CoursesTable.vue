@@ -21,7 +21,7 @@ const closeAppointmentDialog = () => {
 </script>
 
 <template>
-  <div class="q-px-md">
+  <div class="q-py-sm">
     <q-list
       bordered
       separator

@@ -4,11 +4,13 @@
 </script>
 
 <template>
-  <div class="q-pa-md text-h4 text-bold">
-    Courses
+  <div class="q-pa-md">
+    <span class="text-h4 text-weight-bold">
+      Courses
+    </span>
+    <SemesterDropdown />
+    <CoursesTable />
   </div>
 
-  <SemesterDropdown />
 
-  <CoursesTable />
 </template>
