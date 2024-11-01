@@ -1,0 +1,84 @@
+{
+  "students": [
+    {
+      "name": "Ahmad Badron",
+      "semesters": [
+        {
+          "year": 2022,
+          "semester": "1st Semester",
+          "courses": [
+            {
+              "course": "CCC100",
+              "instructor": "Jeffrey Mondejar",
+              "sectionCode": "GgYy"
+            },
+            {
+              "course": "CCC101",
+              "instructor": "Johaira Isra",
+              "sectionCode": "CcUu"
+            },
+            {
+              "course": "GEC105",
+              "instructor": "Elmer Palahang",
+              "sectionCode": "Ff1"
+            },
+            {
+              "course": "HIS003",
+              "instructor": "Ardin Odoy",
+              "sectionCode": "Xx"
+            },
+            {
+              "course": "MAT051",
+              "instructor": "Luzviminda Ranara",
+              "sectionCode": "DdVv"
+            },
+            {
+              "course": "PED011",
+              "instructor": "Andi Paqueo",
+              "sectionCode": "Tt5.1"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "semester": "2nd Semester",
+          "courses": [
+            {
+              "course": "CCC102",
+              "instructor": "Johaira Isra",
+              "sectionCode": "UuVv"
+            },
+            {
+              "course": "FIL101",
+              "instructor": "Amaceta Real",
+              "sectionCode": "Hh2"
+            },
+            {
+              "course": "GEC107",
+              "instructor": "Efren Jone Oledan",
+              "sectionCode": "Ff4"
+            },
+            {
+              "course": "MAT061",
+              "instructor": "Salma Marohombsar",
+              "sectionCode": "GgYy"
+            },
+            {
+              "course": "MAT101",
+              "instructor": "Roselainie Macapodi",
+              "sectionCode": "Xx"
+            },
+            {
+              "course": "PED012",
+              "instructor": "Jonathan Pagdato",
+              "sectionCode": "BbCc5"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "faculty": [
+
+  ]
+}
