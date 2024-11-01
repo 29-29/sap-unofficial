@@ -1,31 +1,50 @@
 <script setup lang="ts">
-import { isLabeledStatement } from 'typescript';
-import json from './courses.json'
+import {  ref } from 'vue';
+// import json from './courses.json';
+import AppointmentDialog from './appointment/AppointmentDialog.vue';
+import CourseSection from '../models';
+import { useCoursesStore } from 'src/store/courses';
+import { storeToRefs } from 'pinia';
 
-const seed = json.courses
+// const seed = json.courses;
+const coursesStore = useCoursesStore();
+const {currentSem} = storeToRefs(coursesStore)
 
-const handleClick = () => {
-  console.log('clicked row!')
-}
+const appointmentDialog = ref(false);
+const openAppointmentDialog = () => {
+  appointmentDialog.value = true;
+};
+
+const closeAppointmentDialog = () => {
+  appointmentDialog.value = false;
+};
 </script>
 
 <template>
-  <div class="q-pa-md">
-    <q-list bordered separator
+  <div class="q-px-md">
+    <q-list
+      bordered
+      separator
     >
-      <q-item v-for="course in json.courses"
+      <q-item v-for="course in currentSem.courses"
         clickable
         v-ripple
-        v-on:click="handleClick"
+        @click="openAppointmentDialog"
       >
-        <q-item-section>
-          {{ course.course.code + ' ' + course.sectionCode }}
+        <q-item-section
+          class="text-h6"
+        >
+          {{ course.course + ' ' + course.sectionCode }}
         </q-item-section>
-        <q-item-section class="text-right text-caption">
-          {{ course.adviser.name.first_name + ' ' + course.adviser.name.last_name }}
+        <q-item-section class="text-right text-bold">
+          {{ course.instructor }}
         </q-item-section>
       </q-item>
     </q-list>
   </div>
 
+  <AppointmentDialog
+    :activate="appointmentDialog"
+    @close="closeAppointmentDialog"
+  />
 </template>
