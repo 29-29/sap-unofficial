@@ -28,6 +28,9 @@ const closeAppointmentDialog = () => {
     	bordered
       separator
     >
+    	<q-item v-if="!currentSem.courses">
+        <q-item-section class="text-caption">No courses in this semester.</q-item-section>
+      </q-item>
       <q-expansion-item v-for="course in currentSem.courses"
         :label="course.course.toString()"
         group="courses"
