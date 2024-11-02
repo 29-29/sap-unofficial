@@ -23,6 +23,7 @@
       color="primary"
       unelevated
       rounded
+      auto-close
     >
       <template v-slot:label>
         <div>
