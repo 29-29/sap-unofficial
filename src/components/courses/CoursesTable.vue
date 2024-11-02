@@ -35,29 +35,27 @@ const closeAppointmentDialog = () => {
         :label="course.course.toString()"
         group="courses"
       >
-        <q-card>
+        <q-card flat>
           <q-card-section>
-            <q-field
-              label="Course"
-              stack-label
-              style="max-width: 300px;"
+            <div class="text-h6">
+              {{ `${course.course} ${course.sectionCode}` }}
+            </div>
+            <div class="text-caption">Course Descriptive Name</div>
+            <q-item
+            clickable
+            v-ripple
+            style="max-width: 300px;"
             >
-              {{ course.course }}
-            </q-field>
-            <q-field
-              label="Section"
-              stack-label
-              style="max-width: 300px;"
-            >
-              {{ course.sectionCode }}
-            </q-field>
-            <q-field
-              label="Instructor"
-              stack-label
-              style="max-width: 300px;"
-            >
-              {{ course.instructor }}
-            </q-field>
+              <q-item-section side>
+                <q-icon
+                name="sym_r_account_circle"
+                color="primary"
+                />
+              </q-item-section>
+              <q-item-section>
+                {{ course.instructor }}
+              </q-item-section>
+            </q-item>
           </q-card-section>
           <q-card-actions>
             <q-btn
